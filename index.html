@@ -14,11 +14,13 @@
 <body>
 
 <div class="navbar">
-  <a href="#home">HOME</a>
-  <a href="#about">ABOUT</a>
-  <a href="#portfolio">PORTFOLIO</a>
-  <a href="#contact">CONTACT</a>
+  <a href="#home"><i class="fa fa-home"></i> HOME</a>
+  <a href="#about"><i class="fa fa-user"></i> ABOUT</a>
+  <a href="#portfolio"><i class="fa fa-th"></i> PORTFOLIO</a>
+  <a href="#contact"><i class="fa fa-envelope"></i> CONTACT</a>
+  <a href="#" class="search"><i class="fa fa-search"></i></a>
 </div>
+
 
 <div id="home" class="parallax bg1">
   <div class="caption">
@@ -74,26 +76,40 @@
 </div>
 
 <section id="contact" class="section">
-  <h3>WHERE I WORK</h3>
-  <p class="subtitle">I'd love your feedback!</p>
+  <form class="contact-form">
+  <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
 
-  <div class="contact-grid">
-    <iframe
-      src="https://www.google.com/maps?q=new%20york&output=embed"
-      loading="lazy">
-    </iframe>
-
-    <div>
-      <p><i class="fa fa-map-marker"></i> New York, US</p>
-      <p><i class="fa fa-phone"></i> Phone: +00 151515</p>
-      <p><i class="fa fa-envelope"></i> Email: mail@mail.com</p>
-    </div>
+  <div class="form-grid">
+    <input type="text" placeholder="Name" required>
+    <input type="email" placeholder="Email" required>
   </div>
+
+  <textarea placeholder="Message"></textarea>
+
+  <button type="submit">
+    <i class="fa fa-paper-plane"></i> SEND MESSAGE
+  </button>
+</form>
+
 </section>
 
-<footer>
-  <p>Parallax Website Clone – Inspired by W3Schools</p>
+<footer class="footer">
+  <a href="#home" class="top-btn">
+    <i class="fa fa-arrow-up"></i> To the top
+  </a>
+
+  <div class="socials">
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-snapchat"></i>
+    <i class="fa-brands fa-pinterest"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-linkedin"></i>
+  </div>
+
+  <p>Inspired by W3Schools</p>
 </footer>
+
 
 </body>
 </html>
