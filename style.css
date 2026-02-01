@@ -1,0 +1,127 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  color: #777;
+  line-height: 1.8;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+.navbar a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #777;
+  font-weight: 600;
+}
+
+.navbar a:hover {
+  color: black;
+}
+
+.parallax {
+  position: relative;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg1 {
+  background-image: url("https://www.w3schools.com/w3images/parallax1.jpg");
+}
+
+.bg2 {
+  background-image: url("https://www.w3schools.com/w3images/parallax2.jpg");
+}
+
+.bg3 {
+  background-image: url("https://www.w3schools.com/w3images/parallax3.jpg");
+}
+
+.caption {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+}
+
+.caption .border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+.caption .light {
+  background-color: transparent;
+  color: #fff;
+}
+
+.section {
+  padding: 80px 50px;
+  text-align: center;
+}
+
+.subtitle {
+  font-style: italic;
+  margin-bottom: 40px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.about-grid img {
+  width: 100%;
+  border-radius: 5px;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+footer {
+  background: #111;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .about-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .parallax {
+    background-attachment: scroll;
+  }
+}
