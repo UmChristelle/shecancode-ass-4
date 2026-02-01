@@ -1,188 +1,38 @@
-
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
   height: 100%;
-  margin: 0;
-  font-family: "Lato", sans-serif;
   color: #777;
   line-height: 1.8;
-  padding-top: 60px; 
-}
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: white;
-  padding: 8px 16px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  z-index: 1000;
-  transition: 0.3s;
 }
 
-.navbar a {
-  display: inline-block;
-  padding: 8px 16px;
-  color: black;  
-  text-decoration: none;
-  font-size: 15px;
-  cursor: pointer; 
-}
-
-.navbar a:hover {
-  background-color: #ccc;
-  color: black;
-}
-
-
-.navbar .search {
-  float: right;
-}
-
-.parallax {
-  position: relative;
-  height: 100vh;
+.bgimg-1, .bgimg-2, .bgimg-3 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.bg1 { background-image: url("https://www.w3schools.com/w3images/parallax1.jpg"); }
-.bg2 { background-image: url("https://www.w3schools.com/w3images/parallax2.jpg"); }
-.bg3 { background-image: url("https://www.w3schools.com/w3images/parallax3.jpg"); }
-
-.caption {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  transform: translateY(-50%);
+.bgimg-1 {
+  background-image: url('/w3images/parallax1.jpg');
+  min-height: 100%;
 }
 
-.caption .border {
-  background-color: #111;
-  color: #fff;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
+.bgimg-2 {
+  background-image: url("/w3images/parallax2.jpg");
+  min-height: 400px;
 }
 
-.caption .light {
-  background-color: transparent;
-  color: #fff;
+.bgimg-3 {
+  background-image: url("/w3images/parallax3.jpg");
+  min-height: 400px;
 }
 
-.section {
-  padding: 80px 50px;
-  text-align: center;
-}
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
 
-.subtitle {
-  font-style: italic;
-  margin-bottom: 40px;
-}
-
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  align-items: center;
-}
-
-.about-grid img {
-  width: 100%;
-  border-radius: 5px;
-}
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
-}
-
-.gallery img {
-  width: 100%;
-  cursor: pointer;      
-  transition: 0.3s;     
-}
-
-.gallery img:hover {
-  opacity: 0.8;         
-}
-
-.contact-form {
-  margin-top: 40px;
-}
-
-.form-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
-}
-
-input, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-}
-
-textarea {
-  margin-top: 15px;
-  resize: none;
-}
-
-button {
-  margin-top: 15px;
-  background: black;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-button:hover {
-  background: #555;
-}
-
-iframe {
-  width: 100%;
-  height: 400px;
-  border: none;
-}
-.footer {
-  background: #666;
-  color: white;
-  padding: 64px 16px;
-  text-align: center;
-}
-
-.top-btn {
-  background: #f1f1f1;
-  color: black;
-  padding: 12px 20px;
-  text-decoration: none;
-  display: inline-block;
-  margin-bottom: 20px;
-}
-
-.top-btn:hover {
-  background: #ccc;
-}
-
-.socials i {
-  margin: 10px;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-@media (max-width: 768px) {
-  .about-grid,
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .parallax {
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
     background-attachment: scroll;
+    min-height: 400px;
   }
 }
