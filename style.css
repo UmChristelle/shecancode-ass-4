@@ -22,15 +22,17 @@ body, html {
 .navbar a {
   display: inline-block;
   padding: 8px 16px;
-  color: #777;
+  color: black;  
   text-decoration: none;
   font-size: 15px;
+  cursor: pointer; 
 }
 
 .navbar a:hover {
   background-color: #ccc;
   color: black;
 }
+
 
 .navbar .search {
   float: right;
@@ -100,7 +102,14 @@ body, html {
 
 .gallery img {
   width: 100%;
+  cursor: pointer;      
+  transition: 0.3s;     
 }
+
+.gallery img:hover {
+  opacity: 0.8;         
+}
+
 .contact-form {
   margin-top: 40px;
 }
