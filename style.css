@@ -30,6 +30,15 @@ body, html {
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
 
+#myNavbar .w3-bar-item {
+  color: #000;
+}
+
+#myNavbar .w3-bar-item:hover {
+  color: #fff;
+  background-color: #000;
+}
+
 @media only screen and (max-device-width: 1600px) {
   .bgimg-1, .bgimg-2, .bgimg-3 {
     background-attachment: scroll;
